@@ -27,7 +27,7 @@ export const addNewWord = newWord => async dispatch => {
   try {
     const request = await addWord(newWord);
     dispatch(addWordSuccess(request));
-    fetchWords();
+    // fetchWords();
   } catch (error) {
     dispatch(addWordError(error));
   }
